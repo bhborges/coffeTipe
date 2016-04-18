@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.root.coffetipe.MainActivity"
+    android:id="@+id/containerBody"
+    android:background="@drawable/wallpaper">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="Selecione seu café"
+        android:textStyle="bold"
+        android:layout_margin="12dp"
+        android:id="@+id/selecione"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selecione"
+
+        android:id="@+id/linear1"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignWithParentIfMissing="false">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:id="@+id/btnEspresso"
+            android:onClick=""
+            android:text="  ESPRESSO"
+            android:drawableLeft="@drawable/expresso64"
+            android:textColor="#ffffff"
+            android:background="@drawable/screen_border"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:id="@+id/btnCurto"
+            android:text="  CURTO"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/curto64"
+            android:background="@drawable/screen_border"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/linear2">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="120sp"
+            android:id="@+id/btnFiltrado"
+            android:text="  FILTRADO"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/filtrado64"
+            android:background="@drawable/screen_border"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:id="@+id/btnItaliano"
+            android:text="  ITALIANO"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/italiano64"
+            android:background="@drawable/screen_border"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:id="@+id/linear3">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:id="@+id/btnCarioca"
+            android:text="  CARIOCA"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/carioca64"
+            android:background="@drawable/screen_border"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:id="@+id/btnRistretto"
+            android:text="  RISTRETTO"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/ristretto64"
+            android:background="@drawable/screen_border"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

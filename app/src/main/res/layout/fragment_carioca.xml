@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.EspressoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:background="#424242">
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARIOCA"
+            android:textColor="#FFD600"
+            android:id="@+id/tituloEspresso"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageEspresso"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/carioca"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tituloEspresso"
+            android:layout_centerHorizontal="true" />
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Apresenta 40 a 50 ml. É o espresso (com 25 a 35 ml) diluído em água quente (entre 15 a 20 ml)."
+           android:layout_below="@+id/imageEspresso"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:textSize="20sp"
+           android:layout_margin="30dp"
+           android:textColor="@android:color/background_light"/>
+
+    </RelativeLayout>
+</FrameLayout>
